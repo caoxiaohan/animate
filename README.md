@@ -11,6 +11,7 @@
 + [打开关闭弹出层(popUplayer)](https://caoxiaohan.github.io/animate/popUpLayer)
 + [同时多方向动画(multiAnimate)](https://caoxiaohan.github.io/animate/multiAnimate)
 + [下拉选择多方向动画(selectAnimate)](https://caoxiaohan.github.io/animate/selectAnimate)
+
 ***
 
 欢迎各位js爱好者，提交分享资源。

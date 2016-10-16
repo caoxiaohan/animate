@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>多方向动画</title>
   <meta charset="utf-8" />
@@ -35,7 +35,6 @@
 <script src="../js/utils.min.js"></script>
 <script>
     function animate(ele,obj,duration,callback){
-        //var obj={width:400,height:333,left:900,top:500,opacity:0.2}
         var oChange={}
         var oBegin={};
         var flag=0;//用来记录有多少个有效change的记数器
@@ -79,9 +78,6 @@
 
 
     btn.onclick=function(e){
-        //animate(div1,"opacity",0,1000);
-        //animate(div1,"left",1000,1000);
-        //只能让ele在一个方向做动画
         var dire = direction.value;
         var objBegin = {left:100,top:100,width:100,height:100,backgroundColor:"#f00",borderRadius:0,opacity:0.8};
         var objEnd;
@@ -111,8 +107,6 @@
               objEnd ={opacity:0.2};               
         }
        
-           // btn.flag=!btn.flag;
-           //btn.flag?obj=objEnd:obj=objBegin ;
           animate(div1,objEnd,1000,function(){
              animate(div1,objBegin,2000);
           });//div1是运动的元素，obj运动的维度的集合，1000是规定的时间
